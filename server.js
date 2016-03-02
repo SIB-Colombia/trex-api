@@ -21,7 +21,7 @@ server.on('after', restify.auditLogger({
     name: 'audit',
     streams: [{
       type: 'rotating-file',
-      path: 'logs/t-rex.log',
+      path: 'log/t-rex.log',
       period: '1d',
     },
     {
