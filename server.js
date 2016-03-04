@@ -12,7 +12,7 @@ server.use(restify.bodyParser({
 }));
 
 server.use(function(req, res, next){
-  console.log('Middleware 2');
+  // TODO:  Append logging requests
   next();
 });
 

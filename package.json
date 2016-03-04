@@ -11,5 +11,8 @@
   "dependencies": {
     "bunyan": "^1.7.1",
     "restify": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
   }
 }
