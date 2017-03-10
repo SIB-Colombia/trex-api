@@ -4,15 +4,16 @@
   "description": "Taxonomical Resolution API",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_ENV=production && node_modules/.bin/nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "LUMON",
   "license": "",
   "dependencies": {
-    "bunyan": "^1.7.1",
-    "restify": "^4.0.4"
+    "bunyan": "^1.8.8",
+    "restify": "^4.3.0"
   },
   "devDependencies": {
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.11.0"
   }
 }
