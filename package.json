@@ -1,6 +1,6 @@
 {
   "name": "t-rex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Taxonomical Resolution API",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,10 @@
   "author": "LUMON",
   "license": "",
   "dependencies": {
-    "bunyan": "^1.8.8",
-    "restify": "^4.3.0"
+    "bunyan": "^1.8.12",
+    "restify": "^6.3.4"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.14.8"
   }
 }

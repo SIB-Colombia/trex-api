@@ -7,7 +7,7 @@ var options = {
 
 var server = restify.createServer(options);
 
-server.use(restify.bodyParser({
+server.use(restify.plugins.bodyParser({
   maxBodySize: 10 *1024
 }));
 
@@ -16,7 +16,7 @@ server.use(function(req, res, next){
   next();
 });
 
-server.on('after', restify.auditLogger({
+server.on('after', restify.plugins.auditLogger({
   log: bunyan.createLogger({
     name: 'audit',
     streams: [{
@@ -27,7 +27,10 @@ server.on('after', restify.auditLogger({
     {
       stream: process.stdout
     }]
-  })
+  }),
+  server: server,
+  event: 'pre',
+  printLog : true
 }));
 
 module.exports = server;
